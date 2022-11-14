@@ -1,0 +1,51 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    background-color: $black-color;
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        &-block {
+            width: 75px;
+            height: 75px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $black-color;
+            color: #fff;
+            &-fb {
+                &:hover {
+                    background-color: #3b5999;
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+                }
+            }
+            &-insta {
+                &:hover {
+                    background-color: #e1306c;
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+                }
+            }
+            &-twitter {
+                &:hover {
+                    background-color: #46c1f6;
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+                }
+            }
+            &-youtube {
+                &:hover {
+                    background-color: #de463b;
+                    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+                }
+            }
+        }
+        &-icon {
+            height: 50%;
+            width: 50%;
+        }
+    }
+}

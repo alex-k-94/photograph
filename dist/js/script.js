@@ -58,4 +58,3 @@ document.querySelector('.carousel__next').addEventListener('click', function() {
 function rollSlider() {
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 };
-
