@@ -58,3 +58,14 @@ document.querySelector('.carousel__next').addEventListener('click', function() {
 function rollSlider() {
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 };
+
+/* Mobile */
+
+const mobile = document.querySelectorAll('.mobile__list');
+function activeLink(){
+    mobile.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+mobile.forEach((item) =>
+item.addEventListener('click', activeLink));
