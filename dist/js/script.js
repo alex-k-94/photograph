@@ -61,11 +61,12 @@ function rollSlider() {
 
 /* Mobile */
 
-const mobile = document.querySelectorAll('.mobile__list');
-function activeLink(){
-    mobile.forEach((item) =>
-    item.classList.remove('active'));
-    this.classList.add('active');
+const mobileList = document.querySelectorAll('.mobile__item');
+function activeMobileLink(){
+    mobileList.forEach((item) => 
+    item.classList.remove('mobile__active'));
+    this.classList.add('mobile__active');
 }
-mobile.forEach((item) =>
-item.addEventListener('click', activeLink));
+
+mobileList.forEach((item) =>
+item.addEventListener('click', activeMobileLink));

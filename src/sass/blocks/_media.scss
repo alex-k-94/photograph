@@ -28,4 +28,22 @@
     .sidebar {
         display: none;
     }
+    .mobile {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer {
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 576px) {
+    .type__blocks {
+        display: flex;
+        flex-direction: column;
+    }
 }
