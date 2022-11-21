@@ -1,6 +1,9 @@
 .mobile {
     display: none;
     background-color: $crep-color;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100vw;
     &__list {
         display: flex;
         justify-content: space-between;
