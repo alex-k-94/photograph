@@ -55,6 +55,22 @@ document.querySelector('.carousel__next').addEventListener('click', function() {
     rollSlider();
 });
 
+document.querySelector('.carousel__button-prev').addEventListener('click', function() {
+    count--;
+    if (count < 0) {
+        count = images.length - 1;
+    }
+    rollSlider();
+});
+
+document.querySelector('.carousel__button-next').addEventListener('click', function() {
+    count++;
+    if (count >= images.length) {
+        count = 0;
+    }
+    rollSlider();
+});
+
 function rollSlider() {
     sliderLine.style.transform = 'translate(-' + count * width + 'px)';
 };
