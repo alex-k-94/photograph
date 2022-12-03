@@ -2,11 +2,11 @@
 
 const sidebar = document.querySelector('.sidebar');
 const sideToggle = document.querySelector('.sidebar__toggle');
-const body = document.querySelector('body');
+const overlay = document.querySelector('.overlay');
 
 sideToggle.addEventListener('click', function(){
     sidebar.classList.toggle('open');
-    body.classList.toggle('overlay');
+    overlay.classList.toggle('o__active');
 });
 
 const list = document.querySelectorAll('.sidebar__item');
