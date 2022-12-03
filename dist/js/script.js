@@ -3,10 +3,12 @@
 const sidebar = document.querySelector('.sidebar');
 const sideToggle = document.querySelector('.sidebar__toggle');
 const overlay = document.querySelector('.overlay');
+const block = document.querySelector('.type__block-part-2');
 
 sideToggle.addEventListener('click', function(){
     sidebar.classList.toggle('open');
     overlay.classList.toggle('o__active');
+    block.classList.toggle('shadow');
 });
 
 const list = document.querySelectorAll('.sidebar__item');
